@@ -16,7 +16,6 @@ html{
 
 body{
     margin: 0 auto;
-    border: 2px solid yellow;
     max-width: 1600px;
     background: #1A0B2E;
 }
@@ -92,24 +91,81 @@ nav .menu a{
 /* banner section here */
 
 #banner-container{
-    height: 1000px;
-    width: 1600px;
-    border: 2px solid red;
-    background-image: url(../images/microphone.png), url(../images/hero-circle.png), url(../images/hero-bg.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center, center, bottom;
-    align-items: center;
+    width: 100%;
+    height: 760px;
     margin: 0 auto;
-    background-size: 6%,20%,100%;
+    background-image:url(../images/microphone.png),
+                     url(../images/hero-circle.png),
+                     url(../images/hero-bg.png);
+    background-repeat:no-repeat,
+                    no-repeat,
+                    no-repeat;
+    background-position: center center,
+                        center center,
+                        center top;
+    background-size: 80px,
+                     260px,
+                     100% auto;
+    
     
 
 }
 
-.banner-content text{
-    justify-content: center;
+.banner-content{
+
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 491px;
 }
 
+.banner-content h1{
+    font-size: 6rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.banner-content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 24px;
+    
+}
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+.spotify{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    height: 44px;
+    width: 201px;
+    padding: 1.2rem 1.6rem;
+    background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.subscribe{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #00FF88;
+    background-color: transparent;
+    border: 1px solid #00FF88;
+    height: 44px;
+    width: 147px;
+    padding: 1.2rem 1.6rem;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-right: 70px;
+}
 
 
 
