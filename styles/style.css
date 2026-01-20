@@ -4,6 +4,117 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+}
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
 body{
-    background: #a82828;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #412567;
+    border: 2px solid yellow;
+}
+
+
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+
+.gradient-text{
+    background: linear-gradient(10deg, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    height: 44px;
+    width: 135px;
+    padding: 1.2rem 1.6rem;
+    background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 60px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    height: 48px;
+    background: #9100F8;
+}
+
+
+
+/* Navbar style here */
+
+nav{
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    align-items: center;
+    /* width: 1200px; */
+    padding: 0 200px 0 200px;
+    margin: 0 auto;
+}
+
+nav #logo{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+nav .menu li{
+    list-style: none;
+
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-size:1.6rem;
+    font-weight: 500;
+    margin: 3.2rem;
+   
+}
+
+#hamburger-icon{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+/* responsive styles for small device */
+
+@media screen and (max-width: 500px) {
+ .menu, .btn{
+    display: none;
+ }
+#hamburger-icon{
+    display: inline;
+    color: #ffffff;
+    font-size:xx-large;
+
+}
+
+nav{
+    margin: 0 20px;
+    padding: 0;
+
+}
+
 }
