@@ -15,10 +15,10 @@ html{
 }
 
 body{
-    max-width: 1600px;
     margin: 0 auto;
-    background: #412567;
     border: 2px solid yellow;
+    max-width: 1600px;
+    background: #1A0B2E;
 }
 
 
@@ -57,12 +57,10 @@ body{
 /* Navbar style here */
 
 nav{
-    /* border: 2px solid green; */
     justify-content: space-between;
     align-items: center;
-    /* width: 1200px; */
-    padding: 0 200px 0 200px;
     margin: 0 auto;
+    padding: 0 200px 0 200px;
 }
 
 nav #logo{
@@ -90,6 +88,29 @@ nav .menu a{
     display: none;
     
 }
+
+/* banner section here */
+
+#banner-container{
+    height: 1000px;
+    width: 1600px;
+    border: 2px solid red;
+    background-image: url(../images/microphone.png), url(../images/hero-circle.png), url(../images/hero-bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, bottom;
+    align-items: center;
+    margin: 0 auto;
+    background-size: 6%,20%,100%;
+    
+
+}
+
+.banner-content text{
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
